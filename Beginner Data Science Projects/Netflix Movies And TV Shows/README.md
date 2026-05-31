@@ -5,6 +5,7 @@ Exploratory Data Analysis (EDA) project using the Netflix Movies & TV Shows data
 ## 📌 Project Overview
 
 The purpose of this project is to analyze Netflix’s catalog and uncover insights about:
+
 •	🎥 Movies vs TV Shows
 
 •	🌍 Top content-producing countries
@@ -20,6 +21,7 @@ The purpose of this project is to analyze Netflix’s catalog and uncover insigh
 •	⏱️ Duration statistics
 
 This project focuses on:
+
 •	Data cleaning
 
 •	Data transformation
@@ -31,6 +33,7 @@ This project focuses on:
 ## 📂 Dataset
 
 The dataset contains information about Netflix titles, including:
+
 •	Title
 
 •	Type (Movie / TV Show)
@@ -64,6 +67,7 @@ The dataset contains information about Netflix titles, including:
 ## 🧹 Data Cleaning
 
 Before analysis, several preprocessing steps were performed:
+
 •	Removed missing values
 
 •	Renamed columns for readability
@@ -71,6 +75,7 @@ Before analysis, several preprocessing steps were performed:
 •	Converted dates to datetime format
 
 •	Split multi-value columns:
+
   o	Country
   
   o	Director
@@ -81,25 +86,25 @@ Before analysis, several preprocessing steps were performed:
 
 ## 📊 Exploratory Data Analysis
 
-🎥 Movies vs TV Shows
+### 🎥 Movies vs TV Shows
 
 •	Compared the number of Movies and TV Shows
 
 •	Created bar charts and pie charts
 
-📈 Content Growth Over Time
+### 📈 Content Growth Over Time
 
 •	Analyzed release trends by year
 
 •	Identified years with the highest number of releases
 
-🌍 Top Countries Producing Content
+### 🌍 Top Countries Producing Content
 
 •	Found countries with the most Netflix titles
 
 •	Compared Movies vs TV Shows by country
 
-🔞 Ratings Analysis
+### 🔞 Ratings Analysis
 
 •	Explored the most common ratings
 
@@ -110,25 +115,25 @@ Before analysis, several preprocessing steps were performed:
   
   o	Adults
 
-⏱️ Duration Analysis
+### ⏱️ Duration Analysis
 
 •	Average movie runtime
 
 •	Average number of TV show seasons
 
-🎭 Genre Analysis
+### 🎭 Genre Analysis
 
 •	Most common Netflix genres
 
 •	Compared dramas and comedies
 
-🎬 Director Analysis
+### 🎬 Director Analysis
 
 •	Directors with the highest number of titles
 
 •	Directors involved in both Movies and TV Shows
 
-🇺🇸🇮🇳 Country Growth Comparison
+### 🇺🇸🇮🇳 Country Growth Comparison
 
 •	Compared content growth between:
 
@@ -138,27 +143,29 @@ Before analysis, several preprocessing steps were performed:
 
 ## 🔍 Key Insights
 
-🎥 Movies dominate Netflix
+### 🎥 Movies dominate Netflix
 Netflix contains significantly more movies than TV shows.
 
-📈 Rapid expansion after 2015
+### 📈 Rapid expansion after 2015
 Netflix experienced massive content growth during the 2010s.
 
-🌍 United States leads production
+### 🌍 United States leads production
 The United States produces the highest amount of Netflix content, followed by India and the United Kingdom.
 
-🔞 Netflix mainly targets adults and teens
+### 🔞 Netflix mainly targets adults and teens
 The most common ratings are:
+
 •	TV-MA
 
 •	TV-14
 
 •	R
 
-🎭 Dramas are the most common genre
+### 🎭 Dramas are the most common genre
 Drama-related genres appear more frequently than comedies.
 
-⏱️ Average duration
+### ⏱️ Average duration
+
 •	Movies average around 100 minutes
 
 •	TV Shows average around 2 seasons
@@ -181,6 +188,7 @@ Drama-related genres appear more frequently than comedies.
 ## 📚 What I Learned
 
 Through this project I practiced:
+
 •	Data cleaning with Pandas
 
 •	Data visualization
