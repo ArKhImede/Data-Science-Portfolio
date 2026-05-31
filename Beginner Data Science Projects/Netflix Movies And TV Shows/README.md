@@ -54,6 +54,8 @@ The dataset contains information about Netflix titles, including:
 
 •	Description
 
+You can use this [link](https://www.kaggle.com/datasets/shivamb/netflix-shows) to download the dataset.
+
 ## 🛠️ Technologies Used
 
 •	```🐍 Python```
