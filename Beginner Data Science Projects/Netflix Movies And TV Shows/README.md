@@ -170,8 +170,6 @@ Drama-related genres appear more frequently than comedies.
 
 •	TV Shows average around 2 seasons
 
----
-
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
@@ -182,8 +180,6 @@ Drama-related genres appear more frequently than comedies.
 
 ### 3️⃣ Run Jupyter Notebook
 ```jupyter notebook```
-
----
 
 ## 📚 What I Learned
 
