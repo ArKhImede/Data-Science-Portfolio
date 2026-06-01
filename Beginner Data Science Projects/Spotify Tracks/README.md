@@ -68,7 +68,7 @@ The dataset contains information about Spotify tracks, including:
 
 • Liveness
 
-You can use this (link)[https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset] to download the dataset.
+You can use this [link](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset) to download the dataset.
 
 ## 🛠️ Technologies Used
 
