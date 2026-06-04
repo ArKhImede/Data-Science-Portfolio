@@ -79,6 +79,7 @@ Before analysis, several preprocessing steps were performed:
 • Removed duplicate or unnecessary entries
 
 • Converted string-based numeric values:
+
   o Upvotes
   
   o Downvotes
@@ -86,6 +87,7 @@ Before analysis, several preprocessing steps were performed:
 into numeric format.
 
 • Converted review dates into:
+
   o Month
   
   o Day
@@ -97,6 +99,8 @@ into numeric format.
   o Review Length
   
   o Review Length Category
+  
+  o Comment Word Count
 
 • Categorized reviews into:
 
