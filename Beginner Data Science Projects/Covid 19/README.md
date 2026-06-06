@@ -172,7 +172,7 @@ Used:
 
 to group countries into clusters based on pandemic behavior.
 
-Findings:
+**Findings:**
 
 • Most countries formed a low-to-medium growth cluster
 
