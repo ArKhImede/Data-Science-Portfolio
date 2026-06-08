@@ -74,11 +74,11 @@ You can use this [link](https://www.kaggle.com/datasets/arnabchaki/popular-video
 
 •	```📓 Jupyter Notebook```
 
-• 🔢 ```SciPy```
+• ```🔢 SciPy```
 
-• 🤖 ```Scikit-learn```
+• ```🤖 Scikit-learn```
 
-• 🎨 ```Aquarel```
+• ```🎨 Aquarel```
 
 ## 🧹 Data Cleaning
 
