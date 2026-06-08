@@ -80,11 +80,11 @@ You can use this [link](https://www.kaggle.com/datasets/maharshipandya/-spotify-
 
 •	```📓 Jupyter Notebook```
 
-• 🔢 ```NumPy```
+• ```🔢 NumPy```
 
-• 🤖 ```Scikit-learn```
+• ```🤖 Scikit-learn```
 
-• 🎨 ```Catppuccin```
+• ```🎨 Catppuccin```
 
 ## 🧹 Data Cleaning
 
