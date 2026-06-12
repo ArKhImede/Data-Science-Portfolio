@@ -238,9 +238,11 @@ A reusable preprocessing pipeline was built using:
 
 • StandardScaler for numerical features
 
-• OneHotEncoder for categorical features
+• OneHotEncoder(handle_unknown="ignore") for categorical features
 
 • ColumnTransformer for automated preprocessing
+
+The preprocessing pipeline was integrated directly into each machine learning model to ensure consistent transformations during training and inference.
 
 ### 📏 Evaluation Metrics
 
