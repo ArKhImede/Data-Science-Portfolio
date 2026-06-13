@@ -8,3 +8,4 @@ xgboost
 joblib 
 pyarrow 
 aquarel
+jupyter
