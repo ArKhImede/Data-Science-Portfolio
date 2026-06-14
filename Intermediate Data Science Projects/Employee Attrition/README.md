@@ -228,11 +228,11 @@ Kernel-based classifier designed to capture nonlinear relationships.
 
 A preprocessing pipeline was built using:
 
-• StandardScaler for numerical features
+• ```StandardScaler``` for numerical features
 
-• OneHotEncoder(handle_unknown="ignore") for categorical features
+• ```OneHotEncoder(handle_unknown="ignore")``` for categorical features
 
-• ColumnTransformer for automated preprocessing
+• ```ColumnTransformer``` for automated preprocessing
 
 The pipeline was integrated directly into each classification model to ensure consistent feature transformations.
 
