@@ -1,0 +1,4 @@
+,Accuracy,Precision,Recall,ROC AUC
+Logistic Regression,0.784,0.784,0.788,0.876
+Random Forest,0.8,0.817,0.777,0.897
+SVM,0.786,0.793,0.776,0.887
