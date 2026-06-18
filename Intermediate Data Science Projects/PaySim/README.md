@@ -70,7 +70,9 @@ Features include:
 
 The dataset is widely used for fraud detection and machine learning classification projects because it contains highly imbalanced transaction data that closely resembles real-world fraud detection challenges.
 
-You can use this [link](https://www.kaggle.com/datasets/mtalaltariq/paysim-data) to download the dataset.
+You can use this [link](https://www.kaggle.com/datasets/mtalaltariq/paysim-data) to download the dataset. 
+
+I didn't provide a ```data``` folder with the dataset as it is quite large (≈482 MB) to upload due to GitHub file size limits.
 
 ## 🛠️ Technologies Used
 
