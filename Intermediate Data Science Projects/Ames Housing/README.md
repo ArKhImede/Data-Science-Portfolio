@@ -1,38 +1,40 @@
-# 🏠 Ames Housing Price Prediction
+# 💳 PaySim Fraud Detection
 
-Exploratory Data Analysis (EDA), Feature Engineering, Statistical Analysis, and Machine Learning project using the Ames Housing dataset. This project explores housing characteristics, sale price drivers, neighborhood effects, and predictive modeling techniques to estimate house sale prices.
+Exploratory Data Analysis (EDA), Feature Engineering, Class Imbalance Handling, and Machine Learning project using the PaySim mobile money transactions dataset. This project investigates fraudulent transaction patterns, transaction behavior, account balance anomalies and predictive modeling techniques to identify potentially fraudulent financial transactions.
 
 ## 📌 Project Overview
 
-The purpose of this project is to analyze residential housing data and uncover insights about:
+The purpose of this project is to analyze financial transaction data and uncover insights about:
 
-• 💰 House sale prices
+• 🚨 Fraudulent transactions
 
-• 🏡 Property characteristics
+• 💸 Transaction amounts
 
-• 📏 Living area and house quality
+• 🏦 Account balance behavior
 
-• 🏘️ Neighborhood influence
+• 🔄 Transaction types
 
-• 🏗️ House age and remodeling effects
+• ⏰ Temporal transaction patterns
 
-• 📊 Statistical differences across sale conditions
+• 📊 Class imbalance challenges
 
-• 🤖 Machine learning regression models
+• 🤖 Machine learning classification models
 
-• 🎯 Housing price prediction
+• 🎯 Fraud detection
 
 This project focuses on:
 
 • Data cleaning
 
-• Missing value handling
+• Memory optimization
 
 • Feature engineering
 
 • Exploratory Data Analysis (EDA)
 
-• Statistical hypothesis testing
+• Fraud pattern analysis
+
+• Class imbalance handling
 
 • Machine Learning
 
@@ -40,45 +42,41 @@ This project focuses on:
 
 • Pipeline construction
 
+• Feature importance analysis
+
 ## 📂 Dataset
 
-The dataset contains detailed information about residential properties sold in Ames, Iowa, including:
+The dataset contains simulated mobile money transactions generated using PaySim, a financial transaction simulator based on real-world transaction behavior.
 
-• Sale price
+Features include:
 
-• House quality and condition
+• Transaction type
 
-• Living area
+• Transaction amount
 
-• Lot size
+• Sender account balance before transaction
 
-• Neighborhood
+• Sender account balance after transaction
 
-• Foundation type
+• Receiver account balance before transaction
 
-• Year built
+• Receiver account balance after transaction
 
-• Year remodeled
+• Fraud indicator
 
-• Garage information
+• Flagged fraud indicator
 
-• Basement information
+• Transaction timestamp (step)
 
-• Porch and deck features
+The dataset is widely used for fraud detection and machine learning classification projects because it contains highly imbalanced transaction data that closely resembles real-world fraud detection challenges.
 
-• Utility and zoning information
-
-The Ames Housing dataset is widely used as a practical alternative to the Boston Housing dataset for regression and machine learning projects.
-
-You can use this [link](https://www.kaggle.com/datasets/shashanknecrothapa/ames-housing-dataset) to download the dataset.
+You can use this [link](https://www.kaggle.com/datasets/mtalaltariq/paysim-data) to download the dataset.
 
 ## 🛠️ Technologies Used
 
-•	```🐍 Python```
+• ```🐍 Python```
 
-•	```🐼 Pandas```
-
-• ```🔢 NumPy```
+• ```🐼 Pandas```
 
 • ```📊 Matplotlib```
 
@@ -88,149 +86,183 @@ You can use this [link](https://www.kaggle.com/datasets/shashanknecrothapa/ames-
 
 • ```🤖 Scikit-learn```
 
+• ```⚡ XGBoost```
+
 • ```💾 Joblib```
 
 • ```📓 Jupyter Notebook```
 
 • ```🎨 Aquarel```
 
-• ```⚡ XGBoost```
+• ```🗂️ PyArrow```
 
 ## 🧹 Data Cleaning
 
 Before analysis, several preprocessing steps were performed:
 
-• Removed extreme outliers from Gross Living Area
+• Removed sender and receiver account identifiers
 
-• Handled missing values using domain-specific strategies
+• Renamed balance columns for consistency
 
-• Replaced missing categorical values representing absent features with "None"
+• Verified duplicate transactions
 
-• Filled Lot Frontage values using neighborhood medians
+• Checked for missing values
 
-• Filled missing numerical values using column medians
+• Converted transaction types into categorical variables
 
-• Filled remaining categorical values using mode
+• Standardized transaction type formatting
 
-• Converted object columns into categorical data types
+• Verified transaction amounts were non-negative
+
+• Verified account balances were non-negative
+
+• Reordered columns for modeling convenience
 
 • Saved a cleaned dataset for downstream analysis
 
 ## ⚙️ Feature Engineering
 
-Several new features were created to improve interpretability and predictive performance:
+Several new features were created to improve fraud detection performance.
 
-### 🏡 Property Age Features
+### 💰 Balance Consistency Features
 
-• House Age
+• Sender Balance Error
 
-• Remod Age
+• Receiver Balance Error
 
-• Was Remodelled
+These features identify transactions where account balances do not reconcile correctly after transfers.
 
-### 🚿 Housing Utility Features
+### 📊 Balance Change Features
 
-• Total Bathrooms
+• Net Change Origin Account
 
-• Total Porch SF
+• Net Change Destination Account
 
-### 📐 Interaction Features
+These variables measure balance movement before and after transactions.
 
-• Overall Qual × Gross Living Area
+### 🚨 Transaction Risk Features
 
-• Total Rooms × Gross Living Area
+• Is Large Transaction
 
-### 📅 Temporal Features
+Transactions above the 99th percentile were flagged as potentially high-risk.
 
-• Built Decade
+### ⏰ Time Features
 
-### 🔥 Property Amenities
+• Day
 
-• Has Pool
+• Hour
 
-• Has Fireplace
+• Day Of Week
+
+These features capture temporal transaction patterns.
+
+### 📐 Ratio Features
+
+• Amount To Balance Ratio
+
+Measures transaction size relative to the sender's available balance.
 
 These engineered features were added to the final modeling dataset.
 
 ## 📊 Exploratory Data Analysis
 
-### 💰 Sale Price Analysis
+### 🚨 Fraud Distribution Analysis
 
-• Examined sale price distribution
+• Measured class imbalance
+
+• Evaluated fraud prevalence
+
+• Compared fraudulent and legitimate transaction frequencies
+
+### 💸 Transaction Amount Analysis
+
+• Examined transaction amount distribution
 
 • Measured skewness
 
-• Compared mean and median values
+• Identified extremely large transactions
 
-### 📏 Gross Living Area Analysis
+### 🏦 Balance Analysis
 
-• Investigated distribution shape
+• Investigated sender balances
 
-• Evaluated kurtosis
+• Investigated receiver balances
 
-• Identified unusually large homes
+• Evaluated balance outliers
 
-### 🏗️ House Age & Remodeling Trends
+### 🔄 Transaction Type Analysis
 
-• Compared construction and remodeling years
+• Compared transaction type frequencies
 
-• Investigated housing stock age
+• Analyzed average transaction amounts by type
 
-### 🏡 Quality & Condition Analysis
+### 📈 Fraud Pattern Analysis
 
-• Explored distributions of:
+• Compared fraud rates across transaction types
 
-  o Overall Quality
-  
-  o Overall Condition
+• Evaluated fraud rates across days of the week
 
-### 💵 Sale Price Relationships
+• Investigated fraud prevalence among large transactions
 
-• Compared house quality versus sale price
+### 📊 Correlation Analysis
 
-• Investigated year built versus sale price
+• Examined relationships between existing features and fraud
 
-### 📈 Correlation Analysis
+• Evaluated correlations of engineered features
 
-• Identified the strongest numerical predictors of sale price
+### 🚨 Outlier Analysis
 
-• Evaluated the usefulness of engineered features
+• Identified transactions above the 99th percentile
 
-### 📊 ANOVA & Tukey HSD
+• Measured prevalence of extreme transaction amounts
 
-• Tested whether sale price means differed across sale conditions
+## 🔍 Key Insights
 
-• Identified which sale condition groups significantly differed
+### 🚨 Fraud is extremely rare
 
-### 🏘️ Group Analysis
+The dataset is heavily imbalanced, with approximately 99.9% of transactions being legitimate and only a very small fraction classified as fraudulent.
 
-Compared sale prices across:
+### 💸 Transaction amounts are highly right-skewed
 
-• Street types
+Most transactions involve relatively modest amounts, while a small number of transactions reach several million currency units.
 
-• Foundation types
+### 🚨 Large transactions are uncommon
 
-• Neighborhoods
+Transactions above the 99th percentile account for only about 1% of all observations.
+
+### 🔄 Fraud is concentrated in specific transaction types
+
+Transfer transactions exhibit substantially higher fraud rates than other transaction categories.
+
+Withdrawals show the second-highest fraud rate, while other transaction types contain very little fraudulent activity.
+
+### 🏦 Balance anomalies are highly informative
+
+Inconsistencies between expected and observed account balances appear to be strong indicators of suspicious activity.
+
+### 📈 Traditional correlations are weak
+
+Most individual features show relatively low linear correlation with fraud, suggesting that complex nonlinear patterns are required for effective detection.
 
 ## 🤖 Machine Learning
 
-Four regression models were trained to predict house sale prices:
+Four classification models were trained to identify fraudulent transactions.
 
-### 📉 Dummy Regressor
+### 📉 Dummy Classifier
 
-Baseline model using the mean sale price.
+Baseline model that always predicts the majority class.
 
-### 🎯 Support Vector Regression (SVR)
+### 📊 Logistic Regression
 
-Support Vector Machine model for regression tasks.
+Linear classification model with balanced class weighting.
 
-### 🌲 Random Forest Regressor
+### 🌲 Random Forest Classifier
 
-Ensemble tree-based model using multiple decision trees.
+Ensemble tree-based classifier using multiple decision trees.
 
-### ⚡ XGBoost Regressor
+### ⚡ XGBoost Classifier
 
-Gradient boosting model designed for high predictive performance.
+Gradient boosting classifier optimized for imbalanced classification tasks.
 
 ### 🔧 Model Pipeline
 
@@ -244,101 +276,93 @@ A reusable preprocessing pipeline was built using:
 
 The preprocessing pipeline was integrated directly into each machine learning model to ensure consistent transformations during training and inference.
 
+### ⚖️ Class Imbalance Handling
+
+Fraudulent transactions represent only a tiny fraction of observations.
+
+To address this challenge:
+
+• Logistic Regression used ```class_weight="balanced"```
+
+• Random Forest used ```class_weight="balanced"```
+
+• XGBoost used ```scale_pos_weight```
+
 ### 📏 Evaluation Metrics
 
 Models were evaluated using:
 
-• Cross-Validation R²
+• Cross-Validation F1 Score
 
-• Test R²
+• Accuracy
 
-• Mean Absolute Error (MAE)
+• Precision
 
-• Mean Squared Error (MSE)
+• Recall
 
-• Mean Absolute Percentage Error (MAPE)
+• ROC-AUC Score
 
-## 🔍 Key Insights
+• F1 Score
 
-### 💰 House prices are positively skewed
+## 🏆 Machine Learning Results
 
-Most homes sell between approximately $100k and $250k, while a smaller number of luxury properties create a long right tail.
+### 📉 Dummy Classifier
 
-### 📏 Larger homes generally sell for more
-
-Gross Living Area is one of the strongest predictors of sale price and shows a strong positive relationship with property value.
-
-### 🏡 House quality strongly impacts price
-
-Higher Overall Quality ratings are consistently associated with higher sale prices.
-
-### 🏗️ Newer homes tend to command higher prices
-
-More recently built properties generally sell for more than older homes.
-
-### 📈 Several features strongly correlate with sale price
-
-The strongest correlations include:
-
-• Overall Quality (~0.8)
-
-• Total Basement Area (~0.7)
-
-• Gross Living Area (~0.7)
-
-### 📊 Sale condition affects pricing
-
-ANOVA results showed statistically significant differences in average sale prices across sale conditions.
-
-### 🛣️ Paved streets are associated with higher prices
-
-Properties located on paved streets exhibit substantially higher average sale prices than those on gravel roads.
-
-### 🏘️ Neighborhood is a major price driver
-
-Median sale prices vary dramatically across neighborhoods, ranging from approximately $88k to over $300k.
-
-## 🤖 Machine Learning Results
-
-### 📉 Dummy Regressor
-
-Served as a baseline model by always predicting the average sale price.
-
-### 🎯 Support Vector Regression (SVR)
-
-SVR struggled to learn the relationship between predictors and target values.
+Served as a baseline by always predicting legitimate transactions.
 
 Key observations:
 
-• Negative R² score
+• Very high accuracy
 
-• Performed worse than the baseline model
+• Zero fraud detection capability
 
-• Failed to capture nonlinear housing patterns effectively
+• Precision = 0
 
-### 🌲 Random Forest Regressor
+• Recall = 0
 
-Random Forest achieved:
+• F1 Score = 0
 
-• Test R² ≈ 0.93
+### 📊 Logistic Regression
 
-• MAE ≈ $13.8k
+Logistic Regression achieved:
 
-• MAPE ≈ 8%
+• Recall ≈ 0.998
 
-The model successfully captured complex nonlinear relationships between housing characteristics and sale price.
+• Strong fraud detection capability
 
-### ⚡ XGBoost Regressor
+Key observations:
 
-XGBoost achieved:
+• Detected nearly all fraudulent transactions
 
-• Test R² ≈ 0.93
+• Generated many false positives
 
-• MAE ≈ $13.8k
+• Low precision
 
-• MAPE ≈ 8%
+### 🌲 Random Forest Classifier
 
-XGBoost produced slightly better results than Random Forest, although both models performed nearly identically.
+Random Forest achieved the strongest overall performance.
+
+Key observations:
+
+• Precision ≈ 1.00
+
+• Recall ≈ 1.00
+
+• F1 Score ≈ 0.999
+
+• Excellent balance between false positives and false negatives
+
+### ⚡ XGBoost Classifier
+
+XGBoost achieved performance comparable to Random Forest.
+
+Key observations:
+
+• Near-perfect fraud detection
+
+• Excellent precision and recall
+
+• Strong ROC-AUC performance
 
 ### 🏆 Best Models
 
@@ -348,9 +372,29 @@ The strongest models were:
 
 • XGBoost
 
-Both substantially outperformed the baseline and SVR models.
+Both substantially outperformed the baseline and Logistic Regression models.
 
-The results suggest that housing prices are driven by highly nonlinear relationships that are best captured by tree-based ensemble methods.
+The results suggest that fraudulent transactions in PaySim exhibit highly distinguishable nonlinear patterns that are effectively captured by tree-based ensemble methods.
+
+## 📊 Feature Importance
+
+Feature importance analysis was performed using the Random Forest model.
+
+The most influential predictors included:
+
+• Sender Balance Error
+
+• Net Change Origin Account
+
+• New Balance Origin
+
+• Old Balance Origin
+
+• Amount To Balance Ratio
+
+Several engineered features ranked among the most important predictors, demonstrating that feature engineering contributed significantly to model performance.
+
+Temporal variables such as hour and day of week had comparatively little influence on fraud prediction.
 
 ## 🚀 How to Run the Project
 
@@ -358,7 +402,7 @@ The results suggest that housing prices are driven by highly nonlinear relations
 ```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
 
 ### 2️⃣ Install dependencies
-```pip install pandas numpy matplotlib seaborn scipy scikit-learn xgboost joblib pyarrow aquarel```
+```pip install pandas matplotlib seaborn scipy scikit-learn xgboost joblib pyarrow aquarel```
 
 ### 3️⃣ Run Jupyter Notebook
 ```jupyter notebook```
@@ -379,30 +423,32 @@ Run the notebooks in the following order:
 
 Through this project I practiced:
 
-• Advanced missing value handling
+• Working with large-scale financial transaction data
 
-• Feature engineering techniques
+• Memory-efficient data processing
 
-• Working with high-dimensional tabular data
+• Feature engineering for fraud detection
 
 • Exploratory Data Analysis (EDA)
 
-• Statistical hypothesis testing using ANOVA
+• Handling severe class imbalance
 
-• Tukey HSD post-hoc analysis
+• Classification model evaluation
 
 • Building preprocessing pipelines
 
-• Handling mixed numerical and categorical data
+• One-hot encoding categorical variables
 
-• Model comparison and benchmarking
+• Feature importance interpretation
+
+• Fraud pattern analysis
 
 • Cross-validation
 
 • Ensemble learning methods
 
-• Regression model evaluation
+• XGBoost classification
 
 • Model persistence using Joblib
 
-• Extracting business insights from real-world housing data
+• Extracting actionable insights from financial transaction data
