@@ -62,7 +62,7 @@ The dataset contains information about TikTok videos and account characteristics
 
 The dataset is used to explore how content and account-related variables influence engagement performance.
 
-You can use this [link](https://www.kaggle.com/datasets/yakhyojon/tiktok) to download the dataset.
+To note, I completed the project a few years ago and I don't remember the correct Kaggle link from which I downloaded the dataset. The closest dataset I have found that looks similar to mine is [this](https://www.kaggle.com/datasets/yakhyojon/tiktok) one.
 
 ## 🛠️ Technologies Used
 
