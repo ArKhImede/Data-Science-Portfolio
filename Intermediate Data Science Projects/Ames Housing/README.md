@@ -68,7 +68,7 @@ The dataset contains detailed information about residential properties sold in A
 
 The Ames Housing dataset is widely used as a practical alternative to the Boston Housing dataset for regression and machine learning projects. 
 
-You can use this [link](https://www.kaggle.com/datasets/shashanknecrothapa/ames-housing-dataset) to download the dataset. 
+To note, I completed the project a few years ago and I don't remember the correct Kaggle link from which I downloaded the dataset. The closest dataset I have found that looks similar to mine is [this](https://www.kaggle.com/datasets/shashanknecrothapa/ames-housing-dataset) one.
 
 ## 🛠️ Technologies Used 
 
