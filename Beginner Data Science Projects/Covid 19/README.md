@@ -56,7 +56,7 @@ The dataset contains worldwide COVID-19 statistics, including:
   
 • Weekly Growth Metrics
 
-You can use this [link](https://www.kaggle.com/datasets/imdevskp/corona-virus-report) to download the dataset.
+To note, I completed the project a few years ago and I don't remember the correct Kaggle link from which I downloaded the dataset. The closest dataset I have found that looks similar to mine is [this](https://www.kaggle.com/datasets/imdevskp/corona-virus-report) one.
 
 ## 🛠️ Technologies Used
 
