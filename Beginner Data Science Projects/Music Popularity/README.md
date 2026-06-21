@@ -76,7 +76,7 @@ The dataset contains information about globally popular music tracks, including:
 
 The dataset is used to explore relationships between musical attributes and track popularity.
 
-You can use this [link](https://www.kaggle.com/datasets/miquelneck/worlds-spotify-top-50-playlist-musicality-data) to download the dataset.
+To note, I completed the project a few years ago and I don't remember the correct Kaggle link from which I downloaded the dataset. The closest dataset I have found that looks similar to mine is [this](https://www.kaggle.com/datasets/miquelneck/worlds-spotify-top-50-playlist-musicality-data) one.
 
 ## 🛠️ Technologies Used
 
