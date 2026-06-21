@@ -72,8 +72,7 @@ The dataset includes observations for:
 
 The dataset used in this project is based on the Palmer Penguins dataset.
 
-You can use this [link](https://www.kaggle.com/datasets/samybaladram/palmers-penguin-dataset-extended?select=palmerpenguins_extended.csv) to download the dataset.
-I downloaded it a few years ago and don't remember the correct link but that one is the closest I found to the project dataset.
+To note, I completed the project a few years ago and I don't remember the correct Kaggle link from which I downloaded the dataset. The closest dataset I have found that looks similar to mine is [this](https://www.kaggle.com/datasets/samybaladram/palmers-penguin-dataset-extended?select=palmerpenguins_extended.csv) one.
 
 ## 🛠️ Technologies Used
 
