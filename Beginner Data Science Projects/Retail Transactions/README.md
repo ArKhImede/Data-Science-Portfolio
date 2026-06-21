@@ -66,8 +66,7 @@ The dataset contains information about retail transactions, including:
 
 The dataset is used to explore relationships between customer behavior, promotions, and transaction characteristics.
 
-You can use this [link](https://www.kaggle.com/datasets/prasad22/retail-transactions-dataset) to download the dataset but note that it has changed. 
-I downloaded it a few years ago and, after visiting the Kaggle page, I noticed some important changes. 
+To note, I completed the project a few years ago and I don't remember the correct Kaggle link from which I downloaded the dataset. The closest dataset I have found that looks similar to mine is [this](https://www.kaggle.com/datasets/prasad22/retail-transactions-dataset) one.
 
 ## 🛠️ Technologies Used
 
