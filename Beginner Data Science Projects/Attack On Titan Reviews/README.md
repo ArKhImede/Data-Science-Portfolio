@@ -54,7 +54,7 @@ The dataset contains user reviews related to the anime Attack on Titan, includin
 
 The dataset includes over 2000 reviews collected between 2013 and 2025.
 
-You can use this [link](https://www.kaggle.com/datasets/karimabenzahra/attack-on-titan-imdb-reviews-dataset) to download the dataset.
+To note, I completed the project a few years ago and I don't remember the correct Kaggle link from which I downloaded the dataset. The closest dataset I have found that looks similar to mine is [this](https://www.kaggle.com/datasets/karimabenzahra/attack-on-titan-imdb-reviews-dataset) one.
 
 ## 🛠️ Technologies Used
 
