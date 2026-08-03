@@ -1,0 +1,2 @@
+Model Name,CV Mean R² score,CV Std,Test R² score,MAE,RMSE
+Random Forest (Tuned),0.7,0.0,0.71,0.28,0.39
