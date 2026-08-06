@@ -1,0 +1,2 @@
+Model Name,CV Mean R² score,CV Std,Test R² score,MAE,RMSE
+XG Boost Tuned,0.91,0.02,0.95,29.08,45.92

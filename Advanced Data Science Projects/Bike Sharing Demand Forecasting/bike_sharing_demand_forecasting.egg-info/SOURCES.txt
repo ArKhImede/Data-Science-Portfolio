@@ -1,0 +1,5 @@
+pyproject.toml
+src/bike_sharing_demand_forecasting.egg-info/PKG-INFO
+src/bike_sharing_demand_forecasting.egg-info/SOURCES.txt
+src/bike_sharing_demand_forecasting.egg-info/dependency_links.txt
+src/bike_sharing_demand_forecasting.egg-info/top_level.txt
