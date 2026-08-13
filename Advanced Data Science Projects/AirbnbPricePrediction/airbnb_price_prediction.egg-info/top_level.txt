@@ -1,6 +1,0 @@
-app
-data
-models
-notebooks
-reports
-src
