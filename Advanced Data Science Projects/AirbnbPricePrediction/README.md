@@ -411,13 +411,19 @@ The evaluation showed moderate overfitting, with prediction uncertainty increasi
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas numpy matplotlib seaborn scipy scikit-learn joblib pyarrow```
+```
+pip install pandas numpy matplotlib seaborn scipy scikit-learn joblib pyarrow
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 Run the notebooks in the following order:
 
