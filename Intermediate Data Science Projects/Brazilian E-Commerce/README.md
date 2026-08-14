@@ -431,13 +431,19 @@ Because review scores are ordinal categories, a classification approach may be m
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas numpy matplotlib seaborn scikit-learn joblib```
+```
+pip install pandas numpy matplotlib seaborn scikit-learn joblib
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 Run the notebooks in the following order:
 
