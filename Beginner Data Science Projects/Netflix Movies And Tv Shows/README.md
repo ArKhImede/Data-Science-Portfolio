@@ -265,13 +265,19 @@ rather than drawing exact business conclusions about Netflix viewership.
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas matplotlib```
+```
+pip install pandas matplotlib
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 ## 📚 What I Learned
 
