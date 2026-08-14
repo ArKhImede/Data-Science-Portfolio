@@ -349,15 +349,21 @@ Both substantially outperformed the baseline and SVR models. The results suggest
 
 ### 1️⃣ Clone the repository
 
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
 
-```pip install pandas numpy matplotlib seaborn scipy scikit-learn xgboost joblib pyarrow aquarel```
+```
+pip install pandas numpy matplotlib seaborn scipy scikit-learn xgboost joblib pyarrow aquarel
+```
 
 ### 3️⃣ Run Jupyter Notebook
 
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 Run the notebooks in the following order: 
 
