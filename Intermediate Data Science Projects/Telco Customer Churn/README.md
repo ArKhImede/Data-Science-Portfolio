@@ -401,13 +401,19 @@ Although Random Forest and XGBoost achieved slightly higher accuracy and precisi
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas matplotlib seaborn scipy statsmodels scikit-learn xgboost joblib pyarrow aquarel```
+```
+pip install pandas matplotlib seaborn scipy statsmodels scikit-learn xgboost joblib pyarrow aquarel
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 Run the notebooks in the following order:
 
