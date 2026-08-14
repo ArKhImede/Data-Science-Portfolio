@@ -231,13 +231,19 @@ Residual plots suggest that the model struggles more with videos receiving extre
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas matplotlib seaborn scikit-learn numpy```
+```
+pip install pandas matplotlib seaborn scikit-learn numpy
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 ## 📚 What I Learned
 
