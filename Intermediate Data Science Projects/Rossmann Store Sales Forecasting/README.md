@@ -411,13 +411,19 @@ Random Forest provided the best balance between predictive accuracy and stabilit
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas matplotlib seaborn scipy statsmodels scikit-learn xgboost joblib pyarrow catppuccin```
+```
+pip install pandas matplotlib seaborn scipy statsmodels scikit-learn xgboost joblib pyarrow catppuccin
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 Run the notebooks in the following order:
 
