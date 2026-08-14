@@ -208,13 +208,19 @@ The Multiple Linear Regression model underfit the data due to high bias.
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas matplotlib numpy scikit-learn catppuccin```
+```
+pip install pandas matplotlib numpy scikit-learn catppuccin
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 ## 📚 What I Learned
 
