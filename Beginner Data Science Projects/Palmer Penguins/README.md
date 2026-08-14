@@ -291,13 +291,19 @@ Residual analysis suggests that although the model captures the overall trend, p
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the repository
-```git clone https://github.com/ArKhImede/Data-Science-Portfolio.git```
+```
+git clone https://github.com/ArKhImede/Data-Science-Portfolio.git
+```
 
 ### 2️⃣ Install dependencies
-```pip install pandas matplotlib numpy scikit-learn seaborn scipy statsmodels```
+```
+pip install pandas matplotlib numpy scikit-learn seaborn scipy statsmodels
+```
 
 ### 3️⃣ Run Jupyter Notebook
-```jupyter notebook```
+```
+jupyter notebook
+```
 
 ## 📚 What I Learned
 
